@@ -1,0 +1,276 @@
+@import 'mixins','variables','include-media','typography','covers','helpers';
+@import 'ui-controls';
+@import 'ui-comps/table';
+@import 'ui-comps/timeline';
+@import 'ui-comps/estimate';
+@import 'ui-comps/elements';
+@import 'ui-comps/proposo-settings';
+@import 'pages/admin-layout';
+@import 'pages/admin-proposals';
+@import 'pages/settings';
+* { box-sizing: border-box };
+:root {
+	--base-font-size: '112.5';
+	@include media("<tablet"){
+		--base-font-size: '87.5%';
+	}
+}
+html{
+	font-size: #{$base-font-size + '%'};
+	font-family:var(--font-text);
+	text-rendering:  optimizeLegibility;
+	font-feature-settings: "kern";
+	-webkit-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern=1";
+	@include media("<tablet"){
+		font-size: 100%;
+	}
+}
+body {
+	width:100%;	
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	min-height:100%;
+	width:100%;
+	color:$text;
+	font-kerning: auto;
+	font-size:100%;
+}
+@font-face {
+	font-family: 'AvertaPE';
+	src: url('../fonts/Averta_0_0.eot');
+	src: url('../fonts/Averta_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/Averta_0_0.woff2') format('woff2'),url('../fonts/Averta_0_0.woff') format('woff'),url('../fonts/Averta_0_0.ttf') format('truetype');
+	font-weight:800;
+}
+ 
+  
+@font-face {
+	font-family: 'AvertaPE';
+	src: url('../fonts/Averta_1_0.eot');
+	src: url('../fonts/Averta_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/Averta_1_0.woff2') format('woff2'),url('../fonts/Averta_1_0.woff') format('woff'),url('../fonts/Averta_1_0.ttf') format('truetype');
+	font-weight:400;
+}
+ 
+  
+@font-face {
+	font-family: 'AvertaPE';
+	src: url('../fonts/Averta_2_0.eot');
+	src: url('../fonts/Averta_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/Averta_2_0.woff2') format('woff2'),url('../fonts/Averta_2_0.woff') format('woff'),url('../fonts/Averta_2_0.ttf') format('truetype');
+	font-weight:600;
+}
+
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
+button, a {
+	transition: color 250ms eas, background-color 250ms ease;
+	cursor:pointer;
+}
+a {
+	color:$text;
+}
+a:hover{
+	color:$primary;
+}
+button,input {
+	font-size:1rem;
+	font-family:var(--font-ui);
+	color:$text;
+}
+
+
+::selection{
+	background:rgba($highlight,.3);
+	color:rgba($text,.9);
+}
+* {
+	@include line-height(1);
+	
+  }
+*+* {
+	@include margin-top(0)
+}
+h1,h2 {
+	font-language-override: normal;
+
+  	/* use font-defined kerning info */
+  	font-kerning: auto;
+
+	  /* opentype options: kerning, ligatures, horiz ligatures,
+	   * discretionary ligatures, contextual swash */
+	 font-feature-settings: "kern", "liga", "dlig", "hlig", "cswh";
+
+  /* allow browser to auto-infer missing glyphs */
+  font-synthesis: weight style;
+}
+
+.ui *, .ui{
+	font-family: var(--font-ui) !important;
+	font-size:14px;
+}
+.editor-wrapper{
+
+	
+}
+.editor{
+	position:relative;
+	padding-bottom:$toolbar-height;
+	overflow-x: hidden;
+}
+ .btn{
+	padding:8px 16px;
+	border-style:solid;
+	border-width:2px;
+	border-radius:$radius;
+	text-transform:uppercase;
+	font-size:14px;
+	letter-spacing:2px;
+	font-weight:600;
+	appearance:none;
+	outline:none;
+	display: flex;
+	align-items: center;
+	font-weight:600;
+	transition: background-color 250ms ease, transform 250ms ease;
+	&:active {
+		transform:translateY(2px);
+	}
+	&-primary{
+		background:$primary; 	
+		border:1px solid transparent;
+		border-color:transparent;
+		color:$salmon-light;	
+		&:hover{
+			background-color:lighten($primary,5%);
+			border-color:$slate;
+		}
+		
+	}
+	&-secondary{
+		border-color:$primary;
+		color:$primary;
+		&:hover{
+			background:$salmon-light;
+		}
+	}
+	&.has-icon {
+		display:flex;
+		align-items:center;
+		.mini-icon {
+			flex: 0 0 20px;
+			display: flex;
+		}
+		.label {
+			flex:1 0 auto;
+			text-align:center;
+		}
+	}
+ }
+
+
+.proposal {
+
+	position:relative;
+	width:100%;
+}
+.proposal-body {;
+	padding-bottom: $ui-padding*4;
+	z-index:0;
+}
+.proposal-wrapper {
+	padding-bottom:$ui-padding*4;
+	position:relative;
+}
+.proposal-wrapper.narrow {
+
+	max-width: $content-wrapper-narrow;
+	margin:0 auto;
+	padding: 0 $proposal-padding 0 $proposal-padding;
+}
+.proposal-wrapper.medium {
+	max-width: $content-wrapper-medium;
+	margin:0 auto;
+	padding: 0 $proposal-padding $ui-padding $proposal-padding;
+}
+
+
+.proposal-content-format{
+	font-family:var(--font-body);
+	h1,h2,h3 {
+		font-family:var(--font-header);
+	}
+	a {
+		text-decoration-color: rgba($text,.5);
+  		text-decoration-thickness: .02em;
+  		text-underline-offset: 3px;
+  		text-decoration-skip-ink: auto;
+  		text-decoration-style:solid;
+	}
+	p{
+		@include margin-top(0);
+	}
+}
+.proposal-body {
+			
+}
+.proposal-body .proposal-content-format{
+	h1,h2,h3,h4{
+		font-weight:400;
+		font-family:var(--font-user-header);
+		
+	}
+	h1 {color:rgba($text,.75);}
+	p,ul,ol,blockquote,li,td, span {
+		word-spacing:0;
+		font-family:var(--font-user-body);
+		font-feature-settings: "liga";
+		-webkit-font-feature-settings: "liga";
+  		-moz-font-feature-settings: "liga";
+  		
+		
+	}
+}
+
+body.editor .proposal-content-format{
+	h1,h2,h3,h4{
+		font-weight:400;
+		font-family: var(--font-user-header);
+		font-weight:bold;
+		letter-spacing:.02em;
+		
+	}
+	.doc-type, .subhead {
+		font-family: var(--font-user-body);
+	}
+	p,ul,ol,blockquote,li,td,span, section, aside, article,div{
+		word-spacing:0;
+		font-family: var(--font-user-body);
+		
+	}
+}
+
+
+.right{
+	margin-left:auto;
+}
+
+.ui .type-sample{
+	h4 {
+		font-family:var(--font-user-header) !important;
+		margin-top:-5px;
+		margin-bottom:0;
+		font-size:24px;
+		line-height:36px;
+	}
+	p {
+		font-family:var(--font-user-body) !important; 
+		margin-bottom:0;
+		margin-top:0;
+		font-size:16px;
+	}
+		
+	
+}

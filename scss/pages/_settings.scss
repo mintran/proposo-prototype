@@ -1,0 +1,77 @@
+.settings-panel {
+	
+	
+
+}
+
+.settings-panel .sub-head{
+	margin:0;
+	padding:0;
+	padding-left:15px;
+}
+.settings-section {
+	border-radius:$radius;
+	background:#fff;
+	margin-bottom:20px;
+
+}
+.date-format-setting {
+	display:flex;
+	flex-wrap:nowrap;
+	.radio-group{
+		flex:0 0 auto;
+		margin-left:10px;
+		border-radius:$border;
+		position:relative;
+	}
+}
+input.custom-radio + label{
+	position:relative;
+	padding:5px 10px 5px 30px;
+	border:$border;
+	border-radius: $radius;
+	transition:all 250ms ease;
+}
+input.custom-radio:checked + label{
+	border-color:$primary;
+	box-shadow: 0 0 0 1px $primary;
+}
+input.custom-radio{
+	position:absolute;
+	top:4px;
+	left:10px;
+}
+.setting-row {
+	display:flex;	
+	flex-wrap:nowrap;
+	border-top:$border-light;
+	border-bottom:1px solid transparent;
+	height:60px;
+	padding:15px;
+	align-items:center;
+	transition:background 250ms ease;
+}
+.setting-label {
+	flex: 0 1 60%;
+}
+.setting-content .profile-pic{
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	position:relative;
+	top:4px;
+}
+.btn-setting-edit {
+	width:100px;
+}
+.setting-content {
+	flex: 0 1 auto;
+	
+}
+.setting-action {
+	margin-left:auto;
+	flex: 0 1 auto;
+}
+.right-align{
+	margin-left:auto;
+}

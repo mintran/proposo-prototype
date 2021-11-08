@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".column-selector").click(function(){console.log($(this).data())})});

@@ -1,0 +1,101 @@
+.proposal-estimate {
+	margin-top: $ui-padding;
+	font-variant-numeric: lining-nums tabular-nums;
+
+	&-header,
+	&-row {
+		display: flex;
+		position: relative;
+		border-bottom: $border;
+
+
+	}
+
+	&-header {
+		display: flex;
+
+		.proposal-estimate-service {
+			padding: $ui-padding 0;
+		}
+	}
+
+	&-service {
+		flex: 0 0 50%;
+		position: relative;
+		display: flex;
+		position: relative;
+
+		&-content {
+			padding: $ui-padding 0;
+		}
+	}
+
+	&-quantity {
+		text-align: right;
+		padding-right: $ui-padding;
+		flex: 0 0 100px;
+	}
+
+	&-rate,
+	&-total {
+		flex: 0 0 auto;
+
+	}
+
+	&-rate,
+	&-total,
+	&-multiplier,
+	&-quantity {
+		padding: $ui-padding 0;
+	}
+
+	&-multiplier {
+		width: 30px;
+		text-align: center;
+	}
+
+	&-rate {
+		text-align: left;
+		flex: 1 0 auto;
+	}
+
+	&-total {
+		padding-left: $ui-padding;
+		flex: 1 0 auto;
+		text-align: right;
+	}
+
+	&-label-content {
+		padding: $ui-padding 0;
+
+	}
+
+	&-row-total {
+		font-weight: 700;
+	}
+
+	&-row-total,
+	&-row-tax,
+	&-row-subtotal {
+		border-bottom: 0;
+
+		.proposal-estimate-label {
+			flex: 0 0 85%;
+			text-align: right;
+			display: block;
+		}
+	}
+
+	.proposal-estimate-add {
+		bottom: -49px;
+		z-index: 6;
+	}
+}
+
+.proposal-timeline-row:hover .ui-row-adder,
+.proposal-estimate-row:hover .ui-row-adder,
+.ui-row-adder:hover {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0, 0);
+}

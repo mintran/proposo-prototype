@@ -1,0 +1,1160 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Proposo Editor</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/filepond.css">
+
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/xut8apr.css"> -->
+    <link rel="stylesheet" href="https://use.typekit.net/vuh0xsk.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zhp8ggg.css"> <!-- type 3 -->
+    <link rel="stylesheet" href="https://use.typekit.net/tvn7qle.css"> <!-- type 4 -->
+
+    <style>
+        :root {
+            --font-ui: 'AvertaPE';
+            --font-header: "AvertaPE", serif;
+            --font-header-weight: 400;
+            --font-body: "AvertaPE", sans-serif;
+            --user-primary-color: hsl(130, 21%, 43%);
+            --user-secondary-color: hsl(150, 25%, 76%);
+            --font-user-header: 'AvertaPE';
+            --font-user-body: 'AvertaPE';
+            --user-uploaded-cover: '';
+        }
+
+        .type-1 {
+            --font-user-header: AvertaPE;
+            --font-user-body: AvertaPE;
+        }
+
+        .type-2 {
+            --font-user-header: ff-meta-serif-web-pro;
+            --font-user-body: ff-meta-web-pro;
+        }
+
+        .type-3 {
+            --font-user-header: freight-display-pro;
+            --font-user-body: freight-text-pro;
+        }
+
+        .type-4 {
+            --font-user-header: calluna-sans;
+            --font-user-body: calluna;
+        }
+    </style>
+</head>
+
+<body class="editor style-1">
+
+    <div class="editor-wrapper">
+
+        <div class="proposal">
+
+            <div class="cover cover-1 proposal-content-format">
+                <div class="cover-image">
+                    <img class="cover-image-src" src="https://source.unsplash.com/1600x900/?minimal,abstract" />
+                </div>
+                <div class="cover-wrapper">
+                    <div class="cover-logo">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg width="89px" height="68px" viewBox="0 0 89 68" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+                            <title>logo</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs></defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Desktop-HD" transform="translate(-326.000000, -104.000000)" stroke=currentColor
+                                    stroke-width="4">
+                                    <g id="cover" transform="translate(0.000000, 59.000000)">
+                                        <g id="logo" transform="translate(330.000000, 50.000000)">
+                                            <polygon id="Triangle" points="30.5 0 61 61 0 61"></polygon>
+                                            <polygon id="Triangle-Copy" points="56 11 81 61 31 61"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+
+                        <!--  {{logo}} -->
+                    </div>
+                    <div class="cover-title">
+                        <h4 class="doc-type">Proposal</h4>
+                        <h1>User Experience Design and Development
+                            <!--  {{title}} -->
+                        </h1>
+                    </div>
+                    <div class="cover-meta-container switcher">
+                        <div class="meta-sender cover-meta">
+                            <div class="cover-meta-wrapper">
+                                <h4 class="subhead">Prepared by</h4>
+                                <ul class="sender cover-meta-list">
+                                    <li class="cover-meta-item-name">John Snow</li>
+                                    <li>Lord of the wall</li>
+                                    <li>info@agencyco.com</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="meta-receiver cover-meta">
+                            <div class="cover-meta-wrapper">
+                                <h4 class="subhead">Prepared for</h4>
+                                <ul class="receiver cover-meta-list">
+                                    <li class="over-meta-item-name">Jamie Lannister</li>
+                                    <li>Hand of the king</li>
+                                    <li>info@acmeinc.com</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="meta-date cover-meta">
+                            <div class="cover-meta-wrapper sent-date-wrapper">
+                                <h4 class="subhead">Prepared on</h4>
+                                <span class="meta-sent-date">Jan 20, 2020</span>
+                            </div>
+                            <div class="cover-meta-wrapper expired-date-wrapper">
+                                <h4 class="subhead">Expired on</h4>
+                                <span class="meta-expired-date">Feb 20, 2020</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div> <!-- cover-wrapper -->
+
+
+            </div>
+
+            <!-- end of cover -->
+
+
+            <article class="proposal-body">
+
+                <div class="proposal-wrapper narrow proposal-content-format">
+                    <div class="ui shorthand-dropdown inline-dropdown" style="top:110px;left: 60px">
+                        <ul>
+                            <li>ACME Corp <span class="shorthand-tag">#receiver.company</span></li>
+                            <li>Jamie Lannister<span class="shorthand-tag">#receiver.name</span></li>
+                            <li>Jon Snow <span class="shorthand-tag">#sender.name</span> </li>
+                            <li>Agency Inc<span class="shorthand-tag">#sender.company</span></li>
+                            <li>Agency Inc<span class="shorthand-tag">#sender.email</span></li>
+                            <li>June 14, 2018<span class="shorthand-tag">#sendingdate</span></li>
+                        </ul>
+                    </div>
+                    <div class="ui format-bar ui-bar" id="format-bar" style="top:20px; left:50%">
+                        <!-- set its position based on the selected text -->
+                        <ul>
+                            <li><img src="img/icons/icon-bold.svg" /></li>
+                            <li><img src="img/icons/icon-strike.svg" /></li>
+                            <li class="has-separator"><img src="img/icons/icon-link.svg" /></li>
+                            <li><img src="img/icons/icon-h1.svg" /></li>
+                            <li><img src="img/icons/icon-h2.svg" /></li>
+                            <li class="has-separator"><img src="img/icons/icon-list.svg" /></li>
+                            <li><img src="img/icons/icon-save.svg" /></li>
+                            <li><img src="img/icons/icon-comment.svg" /></li>
+                        </ul>
+                    </div>
+                    <h2 class="proposal-header">Introduction</h2>
+                    <p>We are <span class="shorthand demo">Agency Inc
+                            <svg width="10px" height="14px" viewBox="0 0 10 14" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+                                <desc>Created with Sketch.</desc>
+                                <defs></defs>
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g fill="#FF934D">
+                                        <g>
+                                            <path
+                                                d="M5.68833254,5.79762519 L10,5.79762519 L3.38151159,14 L4.52764756,8.11667527 L0,8.11667527 L6.76302319,0 L5.68833254,5.79762519 Z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg></span>. We partner with <a href="">lifestyle brands</a> to create beautiful digital
+                        solutions. We don&rsquo;t just build websites; we build businesses. We <a href="">build digital
+                            experiences</a> that connect with audiences, tell brand stories, and streamline complex
+                        processes. We build sites that ultimately become the digital arm of our client&rsquo;s business.
+
+                    </p>
+                    <p>At <span class="shorthand demo">Agency Inc
+                            <svg width="10px" height="14px" viewBox="0 0 10 14" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+                                <desc>Created with Sketch.</desc>
+                                <defs></defs>
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g fill="#FF934D">
+                                        <g>
+                                            <path
+                                                d="M5.68833254,5.79762519 L10,5.79762519 L3.38151159,14 L4.52764756,8.11667527 L0,8.11667527 L6.76302319,0 L5.68833254,5.79762519 Z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg></span>, our passion is business, and finding businesses where we can make a
+                        significant impact through strategy, design, and technology is our focus. Our partner roster
+                        includes established names looking for a digital reboot, as well as startups looking to run
+                        businesses through their digital platform. We have the highest impact on businesses going
+                        through a growth spurt, and we’re there to be their plug and play digital arm.</p>
+
+                </div>
+                <!-- close proposal-wrapper -->
+
+                <!-- break to a new <div class="proposal-wrapper narrow proposal-content-format"> if user adds new content type from insert bar -->
+                <div class="proposal-wrapper narrow proposal-content-format">
+                    <p>
+                        XYZ Corporation is seeking to create a newly designed and more simplified website for its PDQ
+                        division. The new website will provide XYZ customers with a &ldquo;portal&rdquo; experience,
+                        which will enable them to more fully engage with the XYZ brand.
+                    </p>
+
+                </div>
+                <!-- close proposal-wrapper -->
+                <div class="proposal-wrapper narrow proposal-content-format">
+                    <div class="proposal-table-controls-wrapper">
+                        <div class="col-adders">
+                            <button style="left:0" class="col-adder table-adder" data-col-adder="1"><img
+                                    src="img/icons/icon-add.svg" /></button>
+                            <button style="left:33.33%" data-col-adder="2" class="col-adder table-adder"><img
+                                    src="img/icons/icon-add.svg" /></button>
+                            <button data-col-adder="3" style="left:66.66%" class="col-adder table-adder"><img
+                                    src="img/icons/icon-add.svg" /></button>
+                            <button data-col-adder="4" style="left:100%" class="col-adder table-adder"><img
+                                    src="img/icons/icon-add.svg" /></button>
+
+                        </div>
+                        <div class="col-removers table-removers">
+                            <button data-col="col-1" class="col-remover has-tooltip table-remover"
+                                style="left:105px"><img src="img/icons/icon-trash.svg" />
+                                <span class="tooltip">Remove column</span>
+                            </button>
+                            <button data-col="col-2" class="has-tooltip col-remover table-remover"
+                                style="left:360px"><img src="img/icons/icon-trash.svg" />
+                                <span class="tooltip">Remove column</span>
+                            </button>
+                            <button data-col="col-3" class="has-tooltip col-remover table-remover"
+                                style="left:610px"><img src="img/icons/icon-trash.svg" />
+                                <span class="tooltip">Remove column</span>
+                            </button>
+                        </div>
+                        <div class="row-removers table-removers">
+                            <button data-row="row-1" class="has-tooltip row-remover table-remover" style="top:25px"><img
+                                    src="img/icons/icon-trash.svg" />
+                            </button>
+                            <button data-row="row-2" class="has-tooltip row-remover table-remover" style="top:95px"><img
+                                    src="img/icons/icon-trash.svg" />
+                            </button>
+                        </div>
+                        <div class="row-adders">
+
+                            <button style="top:0" class="row-adder table-adder" data-row-adder="1">
+                                <img src="img/icons/icon-add.svg" />
+                            </button>
+                            <button style="top:80px" class="row-adder table-adder" data-row-adder="2">
+                                <img src="img/icons/icon-add.svg" />
+                            </button>
+                            <button style="top:140px" class="row-adder table-adder" data-row-adder="3">
+                                <img src="img/icons/icon-add.svg" />
+                            </button>
+
+                        </div>
+
+
+                        <button class="cross-selector table-selector">
+
+                        </button>
+                        <div class="col-selectors table-selectors">
+                            <button class="col-selector  table-selector" data-col="col-1" style="width:33.33%">
+                                <span class="col-adder-trigger" data-col-adder="1"></span>
+                                <span class="col-adder-trigger" data-col-adder="2"></span>
+                            </button>
+                            <button class="col-selector table-selector" data-col="col-2" style="width:33.33%">
+                                <span class="col-adder-trigger" data-col-adder="2"></span>
+                                <span class="col-adder-trigger" data-col-adder="3"></span>
+                            </button>
+                            <button class="col-selector table-selector" data-col="col-3" style="width:33.33%">
+                                <span class="col-adder-trigger" data-col-adder="3"></span>
+                                <span class="col-adder-trigger" data-col-adder="4"></span>
+                            </button>
+                        </div>
+                        <!-- end col selector -->
+                        <div class="row-selectors table-selectors">
+                            <button class="row-selector table-selector" data-row="row-1" style="height:82px">
+                                <span class="row-adder-trigger" data-row-adder="1"></span>
+                                <span class="row-adder-trigger" data-row-adder="2"></span>
+                            </button>
+                            <button class="row-selector table-selector" data-row="row-2" style="height:56px">
+                                <span class="row-adder-trigger" data-row-adder="2"></span>
+                                <span class="row-adder-trigger" data-row-adder="3"></span>
+                            </button>
+
+                        </div>
+                        <!-- end row selector -->
+                        <div class="proposal-table-wrapper">
+                            <span class="ui-table-resizer col-resizer" style="left:33.33%"></span>
+                            <span class="ui-table-resizer col-resizer" style="left:66.66%"></span>
+                            <span class="ui-table-resizer row-resizer" style="top:76px"></span>
+                            <!--top = total height of the row above this resizer - 4px   -->
+
+                            <table class="proposal-table">
+                                <tr data-row="row-1">
+                                    <td style="width:33.33%" data-col="col-1">
+                                        <div class="proposal-table-cell" contenteditable="true">Nulla vitae elit libero,
+                                            a pharetra augue.
+
+                                        </div>
+
+                                    </td>
+                                    <td style="width:33.33%" data-col="col-2">
+                                        <div class="proposal-table-cell" contenteditable="true">Donec ullamcorper nulla
+                                            non metus auctor fringilla.
+                                        </div>
+
+                                    </td>
+                                    <td style="width:33.33%" data-col="col-3">
+                                        <div class="proposal-table-cell" contenteditable="true">Donec ullamcorper nulla
+                                            non metus auctor fringilla.
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr data-row="row-2">
+                                    <td data-col="col-1">
+                                        <div class="proposal-table-cell" contenteditable="true">Nulla vitae elit
+
+                                        </div>
+
+                                    </td>
+                                    <td data-col="col-2">
+                                        <div class="proposal-table-cell" contenteditable="true">Donec ullamcorper.
+                                        </div>
+
+                                    </td>
+                                    <td data-col="col-3">
+                                        <div class="proposal-table-cell" contenteditable="true">Donec ullamcorper nulla.
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <!-- close proposal-table-wrapper-->
+                    </div><!-- proposal-table-controls-wrapper -->
+                </div>
+                <!-- close proposal-wrapper -->
+                <div class="proposal-wrapper narrow proposal-content-format">
+                    <h2 class="proposal-header">Timeline</h2>
+                    <p>We break down the project into 4 phases in 8 weeks.</p>
+                </div>
+                <div class="proposal-wrapper narrow proposal-content-format">
+                    <div class="proposal-timeline-controls-wrapper">
+                        <form class="proposal-timeline-adjust ui has-tooltip">
+                            <input class="proposal-timeline-time" value="8" type="text" />
+                            <div class="button-wrapper vertical">
+                                <button class="proposal-timeline-plus">
+                                    <span class="arrow-icon"></span>
+                                </button>
+                                <button class="proposal-timeline-minus">
+                                    <span class="arrow-icon"></span>
+                                </button>
+                            </div>
+                            <span class="tooltip">Columns</span>
+                        </form>
+                        <div class="proposal-timeline-wrapper">
+                            <div class="proposal-timeline">
+                                <div class="proposal-timeline-row proposal-timeline-header">
+
+                                    <!-- <div class="proposal-timeline-label">
+                                           <div class="proposal-timeline-label-content"> Timeframe (Week)</div>
+                                        </div> -->
+                                    <div class="proposal-timeline-ticks proposal-timeline-data">
+                                        <div class="proposal-timeline-data-item proposal-timeline-tick"><span>1</span>
+                                        </div>
+                                        <div class="proposal-timeline-data-item  proposal-timeline-tick"><span>2</span>
+                                        </div>
+                                        <div class="proposal-timeline-data-item  proposal-timeline-tick"><span>3</span>
+                                        </div>
+                                        <div class="proposal-timeline-data-item  proposal-timeline-tick"><span>4</span>
+                                        </div>
+                                        <div class="proposal-timeline-data-item  proposal-timeline-tick"><span>5</span>
+                                        </div>
+                                        <div class="proposal-timeline-data-item  proposal-timeline-tick"><span>6</span>
+                                        </div>
+                                        <div class="proposal-timeline-data-item  proposal-timeline-tick"><span>7</span>
+                                        </div>
+                                        <div class="proposal-timeline-data-item  proposal-timeline-tick"><span>8</span>
+                                        </div>
+
+                                    </div>
+                                    <!-- close proposal-timeline-ticks -->
+                                </div>
+                                <!-- close proposal-timeline-header-->
+                                <div class="proposal-timeline-row ui-selectable">
+                                    <button class="ui-row-adder"><img src="img/icons/icon-add.svg" /></button>
+                                    <!-- <div class="proposal-timeline-label">
+                                            <div class=" ui-grabber"></div>
+                                            <div class="proposal-timeline-label-content">UX Research</div>
+                                           
+                                             <button class="ui-row-adder"><img src="img/icons/icon-add.svg" /></button>
+                                        </div> -->
+                                    <div class="proposal-timeline-data">
+                                        <div class="proposal-timeline-bar-limit">
+                                            <!-- this div limit the bar's width & its position relative to the faux column/row underneath -->
+                                            <div class="proposal-timeline-bar selected"
+                                                style="background-color:#9C548F; width:25%;">
+                                                <!-- flexible/scalabe width for responsive -->
+                                                <!-- toggle class 'selected' when click on the bar -->
+                                                <div class="proposal-timeline-bar-content">
+                                                    <span class="proposal-timeline-bar-resizer-left"></span>
+                                                    <span class="proposal-timeline-bar-resizer-right"></span>
+                                                    <div class="proposal-timeline-bar-label">
+                                                        <div class="proposal-timeline-bar-label-content">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="proposal-timeline-dropdown-wrapper">
+                                                    <div class="proposal-timeline-dropdown">
+                                                        <div class="proposal-timeline-dropdown-header"
+                                                            style="background-color:#9C548F">
+                                                            <input class="proposal-timeline-input" type="text"
+                                                                placeholder="Name the item" />
+                                                            <!-- Add value="Design", remove placeholder when edit an existing item -->
+                                                        </div>
+                                                        <div class="proposal-timeline-dropdown-content">
+                                                            <ul class="color-picker-predefined">
+                                                                <li style="background-color:#41B9D6"></li>
+                                                                <li style="background-color:#3C7EA2"></li>
+                                                                <li style="background-color:#2598DA"></li>
+                                                                <li class="selected" style="background-color:#9C548F">
+                                                                </li>
+                                                                <li style="background-color:#819E91"></li>
+                                                                <li style="background-color:#299F9C"></li>
+                                                                <li style="background-color:#3B634A"></li>
+                                                                <li style="background-color:#719A52"></li>
+                                                                <li style="background-color:#C04439"></li>
+                                                                <li style="background-color:#DD5562"></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- timeline-dropdown -->
+                                                </div><!-- proposal-timeline-wrapper-->
+
+                                            </div>
+                                        </div><!-- limit -->
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+
+                                    </div>
+                                    <!-- close proposal-timeline-data -->
+                                    <button class="proposal-timeline-remover ui-row-remover"><img
+                                            src="img/icons/icon-trash.svg" /></button>
+                                </div>
+                                <!-- close proposal-timeline-row-->
+
+                                <div class="proposal-timeline-row ui-selectable">
+                                    <button class="ui-row-adder"><img src="img/icons/icon-add.svg" /></button>
+                                    <!-- <div class="proposal-timeline-label">
+                                            <div class="ui-grabber"></div>
+                                            <div class="proposal-timeline-label-content">Interface Design</div>
+                                           
+                                              <button class="ui-row-adder"><img src="img/icons/icon-add.svg" /></button>
+                                        </div> -->
+                                    <div class="proposal-timeline-data">
+                                        <div class="proposal-timeline-bar"
+                                            style="background-color:#3C7EA2; width:25%; left:10px">
+                                            <div class="proposal-timeline-bar-content">
+                                                <div class="proposal-timeline-bar-content">
+                                                    <span class="proposal-timeline-bar-resizer-left"></span>
+                                                    <span class="proposal-timeline-bar-resizer-right"></span>
+                                                    <div class="proposal-timeline-bar-label">
+                                                        <div class="proposal-timeline-bar-label-content">
+                                                            Design
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+
+                                    </div>
+                                    <!-- close proposal-timeline-data -->
+                                    <button class="proposal-timeline-remover ui-row-remover"><img
+                                            src="img/icons/icon-trash.svg" /></button>
+                                </div>
+                                <!-- close proposal-timeline-row-->
+
+                                <div class="proposal-timeline-row ui-selectable">
+                                    <button class="ui-row-adder"><img src="img/icons/icon-add.svg" /></button>
+                                    <!-- <div class="proposal-timeline-label">
+                                            <div class="ui-grabber"></div>
+                                            <div class="proposal-timeline-label-content">Development</div>
+                                             
+                                              <button class="ui-row-adder"><img src="img/icons/icon-add.svg" /></button>
+                                        </div> -->
+                                    <div class="proposal-timeline-data">
+                                        <div class="proposal-timeline-bar"
+                                            style="background-color:#719A52; width:40%; left:30%">
+                                            <span class="proposal-timeline-bar-resizer-left"></span>
+                                            <span class="proposal-timeline-bar-resizer-right"></span>
+                                            <div class="proposal-timeline-bar-label">
+                                                <div class="proposal-timeline-bar-label-content">Development</div>
+                                            </div>
+                                        </div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+
+                                    </div>
+                                    <!-- close proposal-timeline-data -->
+                                    <button class="proposal-timeline-remover ui-row-remover"><img
+                                            src="img/icons/icon-trash.svg" /></button>
+                                </div>
+                                <!-- close proposal-timeline-row-->
+
+                                <div class="proposal-timeline-row ui-selectable">
+                                    <button class="ui-row-adder has-tooltip">
+                                        <span class="tooltip">New row</span><img
+                                            src="img/icons/icon-add.svg" /></button>
+                                    <!-- <div class="proposal-timeline-label">
+                                            <div class=" ui-grabber"></div>
+                                            <div class="proposal-timeline-label-content">Deloyment and Testing</div>
+                                            
+                                              <button class="ui-row-adder"><img src="img/icons/icon-add.svg" /></button>
+                                        </div> -->
+                                    <div class="proposal-timeline-data">
+                                        <div class="proposal-timeline-bar"
+                                            style="background-color:#3C7EA2; width:40%; left:57%">
+                                            <span class="proposal-timeline-bar-resizer-left"></span>
+                                            <span class="proposal-timeline-bar-resizer-right"></span>
+                                            <div class="proposal-timeline-bar-label">
+                                                <div class="proposal-timeline-bar-label-content">Testing</div>
+                                            </div>
+                                        </div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+                                        <div class="proposal-timeline-data-item"></div>
+
+                                    </div>
+                                    <!-- close proposal-timeline-data -->
+                                    <button class="proposal-timeline-remover ui-row-remover"><img
+                                            src="img/icons/icon-trash.svg" /></button>
+                                </div>
+                                <!-- close proposal-timeline-row-->
+                            </div>
+                            <!-- close proposal-timeline -->
+                        </div><!-- close proposal-timeline-wrapper -->
+                    </div> <!-- close proposal-timeline-controls-wrapper -->
+
+                </div><!-- close proposal-wrapper -->
+
+                <div class="proposal-wrapper narrow proposal-content-format">
+                    <h2 class="proposal-header">Cost</h2>
+                </div>
+                <div class="proposal-wrapper narrow proposal-content-format">
+                    <p>If you have any queries about this quote, please feel free to reach out any time. </p>
+                </div>
+                <div class="proposal-wrapper narrow proposal-content-format">
+                    <div class="proposal-estimate-controls-wrapper">
+                        <div class="proposal-estimate">
+                            <div class="proposal-estimate-header">
+                                <div class="proposal-estimate-service" contenteditable="true">Services</div>
+                                <!--   <div class="proposal-estimate-quantity"  contenteditable="true"> </div>
+                                    <div class="proposal-estimate-rate"  contenteditable="true"> </div> -->
+
+                            </div>
+                            <div class="proposal-estimate-row ui-selectable">
+                                <div class="proposal-estimate-service" contenteditable="true">
+                                    <div class="ui-grabber"></div>
+                                    <div class="proposal-estimate-service-content">UX Research</div>
+
+                                    <button class="ui-row-adder"><img src="img/icons/icon-add.svg" /></button>
+                                </div>
+
+                                <div class="proposal-estimate-quantity" contenteditable="true">2 days</div>
+                                <div class="proposal-estimate-multiplier">&times;</div>
+                                <div class="proposal-estimate-rate" contenteditable="true">$800</div>
+                                <div class="proposal-estimate-total" contenteditable="true">$1600</div>
+
+                                <button class="ui-row-remover"><img src="img/icons/icon-trash.svg" /></button>
+
+
+                            </div>
+                            <div class="proposal-estimate-row ui-selectable">
+                                <div class="proposal-estimate-service" contenteditable="true">
+                                    <div class="ui-grabber"></div>
+                                    <div class="proposal-estimate-service-content">UI Design</div>
+
+                                    <button class="ui-row-adder"><img src="img/icons/icon-add.svg" /></button>
+                                </div>
+
+                                <div class="proposal-estimate-quantity" contenteditable="true">10 hours</div>
+                                <div class="proposal-estimate-multiplier">&times;</div>
+                                <div class="proposal-estimate-rate" contenteditable="true">$120</div>
+                                <div class="proposal-estimate-total" contenteditable="true">$1200</div>
+                                <button class="ui-row-remover"><img src="img/icons/icon-trash.svg" /></button>
+                            </div>
+                            <div class="proposal-estimate-row ui-selectable">
+                                <div class="proposal-estimate-service" contenteditable="true">
+                                    <div class="ui-grabber"></div>
+                                    <div class="proposal-estimate-service-content">Front-end Development</div>
+
+                                    <button class="ui-row-adder"><img src="img/icons/icon-add.svg" /></button>
+                                </div>
+                                <div class="proposal-estimate-quantity" contenteditable="true">10 hours</div>
+                                <div class="proposal-estimate-multiplier">&times;</div>
+                                <div class="proposal-estimate-rate" contenteditable="true">$120</div>
+                                <div class="proposal-estimate-total" contenteditable="true">$1200</div>
+                                <button class="ui-row-remover"><img src="img/icons/icon-trash.svg" /></button>
+                            </div>
+                            <div class="proposal-estimate-row ui-selectable">
+                                <div class="proposal-estimate-service" contenteditable="true">
+                                    <div class="ui-grabber"></div>
+                                    <div class="proposal-estimate-service-content">Back-end Development</div>
+
+                                    <button class="ui-row-adder"><img src="img/icons/icon-add.svg" /></button>
+                                </div>
+
+                                <div class="proposal-estimate-total" contenteditable="true">$2500</div>
+                                <button class="ui-row-remover"><img src="img/icons/icon-trash.svg" /></button>
+                            </div>
+
+                            <div class="proposal-estimate-row proposal-estimate-row-subtotal">
+                                <div class="proposal-estimate-service" contenteditable="true">
+                                    <div class="proposal-estimate-service-content">Sub Total</div>
+                                </div>
+
+                                <div class="proposal-estimate-total" contenteditable="true">$4700</div>
+                            </div>
+
+                            <div class="proposal-estimate-row proposal-estimate-row-tax">
+                                <div class="proposal-estimate-service" contenteditable="true">
+                                    <div class="proposal-estimate-service-content">Tax</div>
+                                </div>
+
+                                <div class="proposal-estimate-total" contenteditable="true">10%</div>
+                            </div>
+
+                            <div class="proposal-estimate-row proposal-estimate-row-total">
+                                <div class="proposal-estimate-service" contenteditable="true">
+                                    <div class="proposal-estimate-service-content">Total</div>
+                                </div>
+
+                                <div class="proposal-estimate-total" contenteditable="true">$5440</div>
+                            </div>
+
+                        </div>
+                        <!-- end of estimate -->
+                    </div>
+                    <!-- end of estimate controls wrapper -->
+
+
+
+                </div>
+                <!-- end of proposal wrapper -->
+
+            </article>
+            <!-- close proposal-body -->
+        </div>
+        <!-- end of proposal -->
+
+
+
+    </div>
+    <!--end of editor-wrapper-->
+    <div class="proposal-options-panel panel-design ui pop-over ">
+        <button class="btn-close ui">&times;</button>
+        <h3 class="ui-header">Design options</h3>
+        <div class="proposal-options-panel-wrapper styled-scrollbar">
+            <div class="proposal-options-comp cover-switcher">
+                <h4 class="ui-subhead">Cover design</h4>
+                <ul class="covers-list">
+                    <li data-cover="cover-1" class="selected">
+                        <img src="img/cover-1.svg" alt="cover-1" />
+                    </li>
+                    <li data-cover="cover-2" class="selected">
+                        <img src="img/cover-2.svg" alt="cover-2" />
+                    </li>
+                    <li data-cover="cover-3" class="selected">
+                        <img src="img/cover-3.svg" alt="cover-3" />
+                    </li>
+                    <li data-cover="cover-4" class="selected">
+                        <img src="img/cover-4.svg" alt="cover-4" />
+                    </li>
+                </ul>
+                <h4 class="ui-subhead">Cover image</h4>
+                <form id="form1">
+                    <input type='file' class="filepond" name="filepond" id="imgSrc" />
+                </form>
+            </div>
+            <!-- option-comp-->
+            <div class="proposal-options-comp color-picker">
+                <h4 class="ui-subhead">Bold color</h4>
+                <div class="color-picker-scheme">
+                    <ul class="color-picker-predefined primary-color-picker">
+                        <li class="selected" style="background-color:hsl(130,21%,43%)" ;></li>
+                        <li style="background-color:hsl(154,27%,53%)"></li>
+                        <li style="background-color:hsl(168, 36%, 41%)"></li>
+
+                        <li style="background-color:hsl(205, 89%, 30%)"></li>
+                        <li style="background-color:hsl(220, 88.3%, 23.9%)"></li>
+                        <li style="background-color:hsl(325, 36%, 46%)"></li>
+                        <li style="background-color:hsl(354,42%,53%)"></li>
+                        <li style="background-color:hsl(353,57%,44%)"></li>
+                        <li style="background-color:hsl(5, 22%, 33%)"></li>
+                        <li style="background-color:hsl(230,90%,10%)"></li>
+
+
+                    </ul>
+                    <div class="hex-input">
+                        <label for="brand-hex-input">Or enter hex value </label>
+                        <input type="text" id="brand-hex-input" class="inline-input color-picker-hex"
+                            placeholder="#272570" />
+                    </div>
+                </div>
+                <!--color picker-->
+
+            </div>
+            <!--proposal-options-comp-->
+
+            <div class="proposal-options-comp color-picker">
+                <h4 class="ui-subhead">Soft color</h4>
+                <div class="color-picker-scheme">
+                    <ul class="color-picker-predefined secondary-color-picker">
+                        <li style="background-color:hsl(190,40%,80%)" ;></li>
+                        <li class="selected" style="background-color:hsl(150,25%,76%)" ;></li>
+                        <li style="background-color:hsl(100,25%,76%)" ;></li>
+                        <li style="background-color:hsl(45,27%,86%)"></li>
+                        <li style="background-color:hsl(43, 80%, 76%)"></li>
+                        <li style="background-color:hsl(14, 93%, 83%)"></li>
+                        <li style="background-color:hsl(29, 96%, 81%)"></li>
+
+
+                    </ul>
+                    <div class="hex-input">
+                        <label for="brand-hex-input">Or enter hex value </label>
+                        <input type="text" id="brand-hex-input" class="inline-input color-picker-hex"
+                            placeholder="#272570" />
+                    </div>
+                </div>
+                <!--color picker-->
+
+            </div>
+            <!--proposal-options-comp-->
+
+
+            <div class="proposal-options-comp type-pairing">
+                <h4 class="ui-subhead">Typography</h4>
+                <ul class="type-pairing-list">
+                    <li data-type="type-1" class="selected sample-type-1 type-1">
+                        <div class="type-sample">
+                            <h4>Header</h4>
+                            <p>Body text type set </p>
+                        </div>
+                    </li>
+                    <li data-type="type-2" class="sample-type-2  type-2">
+                        <div class="type-sample">
+                            <h4>Header</h4>
+                            <p>Body text type set </p>
+                        </div>
+                    </li>
+                    <li data-type="type-3" class="sample-type-3  type-3">
+                        <div class="type-sample">
+                            <h4>Header</h4>
+                            <p>Body text type set </p>
+                        </div>
+                    </li>
+                    <li data-type="type-4" class="sample-type-4  type-4">
+                        <div class="type-sample">
+                            <h4>Header</h4>
+                            <p>Body text type set </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- option-comp-->
+
+
+
+        </div>
+        <!-- proposal-options-menu-wrapper-->
+    </div>
+    <!--proposal-options-menu-->
+
+    <div class="editor-toolbar ui">
+        <div class="editor-toolbar-wrapper">
+            <div class="toolbar-left toolbar-actions">
+                <a class="dashboard-link" href="proposals.html"><span>←</span> </a>
+                <div class="btn-wrapper">
+
+                    <button class="btn-toolbar ui btn-toolbar-design">Design</button>
+
+                </div>
+                <!--btn wrapper-->
+            </div>
+            <div class="insert-bar ui-bar">
+                <ul class="insert-actions ui">
+
+                    <li><svg class="icon-insert-image">
+                            <use xlink:href="#icon-image" />
+                        </svg>
+                        <span>Image</span></li>
+                    <li><svg class="icon-insert-video">
+                            <use xlink:href="#icon-video" />
+                        </svg><span>Embed</span></li>
+                    <li><svg class="icon-insert-estimate">
+                            <use xlink:href="#icon-estimate" />
+                        </svg>
+                        <span>Cost Table</span></li>
+                    <li><svg class="icon-insert-timeline">
+                            <use xlink:href="#icon-timeline" />
+                        </svg><span>Timeline</span></li>
+                </ul>
+
+            </div>
+            <!-- insert-bar -->
+            <div class="toolbar-right toolbar-actions">
+
+                <div class="btn-wrapper">
+                    <button class="btn-toolbar ui btn-toolbar-send">Send</button>
+                </div>
+            </div>
+            <!--toolbar-right-->
+        </div>
+        <!--editor-toolbar-wrapper -->
+    </div>
+    <!--editor-toolbar-->
+
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <svg version="1.1" id="sprite" xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="icon-video" viewBox="0 0 24 22">
+            <title>icon-video</title>
+            <g transform="translate(1 1)" stroke="currentColor" stroke-width="2" fill="none">
+                <rect width="22" height="20" rx="2" />
+                <path
+                    d="M14.83 11.081l-5.121 3.646c-.502.177-.855.215-1.058.113-.203-.102-.42-.426-.651-.972v-7.883c.138-.462.296-.75.474-.861.178-.112.537-.148 1.075-.108l5.346 4.031c.364.446.542.787.535 1.024-.008.237-.208.574-.6 1.011z" />
+            </g>
+        </symbol>
+
+        <symbol id="icon-timeline" viewBox="0 0 22 22">
+            <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2" transform="translate(1)">
+                <path
+                    d="m16 4h3c.5522847 0 1 .44771525 1 1v15c0 .5522847-.4477153 1-1 1h-18c-.55228475 0-1-.4477153-1-1v-15c0-.55228475.44771525-1 1-1h2.98790466m4.01209534 0h4" />
+                <path d="m5.91896705 1.49688335v4.28673197" stroke-linecap="square" />
+                <g stroke-linecap="round">
+                    <path d="m13.9011576.97951915v4.93352433" />
+                    <path d="m5 11h7" />
+                    <path d="m8 15h7" />
+                </g>
+            </g>
+        </symbol>
+
+        <symbol id="icon-image" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/symbol">
+            <title>icon-image</title>
+            <desc>Created with Sketch.</desc>
+            <g transform="translate(1 1)" stroke="currentColor" stroke-width="2" fill="none">
+                <rect width="22" height="20" rx="2" />
+                <path d="M0 17.78l7.386-6.78 9.09 9.105M11 13.898l4.155-1.898 4.263 2.917 2.435 1.653" />
+                <circle cx="14" cy="6" r="2" />
+            </g>
+        </symbol>
+
+        <symbol id="icon-estimate" viewBox="0 0 22 22">
+            <g stroke="currentColor" stroke-width="2" fill="none">
+                <path d="M18 21h-16c-.552 0-1-.448-1-1v-18c0-.552.448-1 1-1h16c.552 0 1 .448 1 1v18c0 .552-1 1-1 1z" />
+                <path d="M4 9h12v-5h-12z" />
+                <path d="M3 12h4" />
+                <path d="M3 15h4" />
+                <path d="M3 18h4" />
+                <path d="M8 12h4" />
+                <path d="M8 15h4" />
+                <path d="M8 18h4" />
+                <path d="M13 15h4" />
+                <path d="M13 18h4" />
+                <path d="M13 12h4" />
+            </g>
+        </symbol>
+
+    </svg>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/tinycolor-min.js"></script>
+    <script src="js/filepond.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // const inputElement = document.querySelector('input[type="file"]');
+        // const pond = FilePond.create(inputElement);
+        $(document).ready(function () {
+
+            $('.col-selector').click(function () {
+                $('.table-selector').removeClass('is-selected');
+                $('.table-remover').removeClass('is-active'); //hide all remove button
+                $('td.highlight-cell').removeClass('highlight-cell');
+                $(this).addClass('is-selected');
+                var datacol = $(this).attr('data-col');
+                $('.proposal-table').find('td[data-col="' + datacol + '"]').addClass('highlight-cell');
+                $('.col-removers').find('.col-remover[data-col="' + datacol + '"]').addClass(
+                    'is-active');
+            });
+            $('.ui-selectable').click(function () {
+                $('.ui-selectable').removeClass('is-selected');
+                $('.ui-grabber').removeClass('is-active');
+                $(this).find('ui-grabber').addClass('is-active');
+                $(this).toggleClass('is-selected');
+            });
+            $('.row-selector').click(function () {
+                $('.table-selector').removeClass('is-selected');
+                $('.table-remover').removeClass('is-active');
+                $('tr td.highlight-cell').removeClass('highlight-cell');
+                $(this).addClass('is-selected');
+                var datarow = $(this).attr('data-row');
+                $('.proposal-table').find('tr[data-row="' + datarow + '"] td').addClass(
+                    'highlight-cell');
+                $('.row-removers').find('.row-remover[data-row="' + datarow + '"]').addClass(
+                    'is-active');
+            });
+
+            //show the appropriated "new col" button when over on the handle bar (which is 50% of the col width); 
+            $('.col-adder-trigger').hover(function () {
+                var data_adder = $(this).attr('data-col-adder');
+                $('.table-adder').removeClass('is-triggered');
+                $('.col-adders').find('[data-col-adder="' + data_adder + '"]').addClass('is-triggered');
+            });
+            $('.row-adder-trigger').hover(function () {
+                var data_adder_2 = $(this).attr('data-row-adder');
+                $('.table-adder').removeClass('is-triggered');
+                $('.row-adders').find('[data-row-adder="' + data_adder_2 + '"]').addClass(
+                    'is-triggered');
+            });
+
+            $('.cross-selector').click(function () {
+                $('.table-selector').removeClass('is-selected');
+                $('.proposal-table td').removeClass('highlight-cell');
+                $('.table-selector:not(.is-selected').addClass('is-selected');
+                $('.proposal-table td:not(.highlight-cell').addClass('highlight-cell');
+            });
+            $('.shorthand.demo').click(function () {
+                $('.shorthand-dropdown').toggleClass('is-active');
+                $(this).toggleClass('is-active');
+            });
+
+            $('.primary-color-picker li').click(function () {
+                $('.cover-title h1, .cover-meta, .cover-meta h4').css("color", "");
+                $(this).parent().find('> *').removeClass('selected');
+                $(this).addClass('selected');
+                var color = $(this).css("background-color");
+                document.body.style.setProperty("--user-primary-color", color);
+                console.log(color);
+            });
+
+            $('.secondary-color-picker li').click(function () {
+                $('.cover-title h1, .cover-meta, .cover-meta h4').css("color", "");
+                $(this).parent().find('> *').removeClass('selected');
+                $(this).addClass('selected');
+                var color = $(this).css("background-color");
+                document.body.style.setProperty("--user-secondary-color", color);
+                console.log(color);
+            });
+
+
+
+            $('.btn-toolbar-design').click(function () {
+                $('.panel-design').toggleClass('is-active');
+                $('.editor-wrapper').addClass('off-canvas')
+
+            });
+            $('.btn-close').click(function () {
+                $(this).parents().find('.pop-over').removeClass('is-active');
+                $('.editor-wrapper').removeClass('off-canvas')
+            });
+            //hide all active pop-ups, menus,...
+            $(document).mouseup(function (e) {
+                var container = $('.pop-over');
+
+                // if the target of the click isn't the container nor a descendant of the container nor the scrollbar
+                if (!container.is(e.target) && container.has(e.target).length === 0 && (e.target != $(
+                        'html').get(0))) {
+                    container.removeClass('is-active');
+                    if ($('.editor-wrapper').hasClass('off-canvas')) {
+                        $('.editor-wrapper').removeClass('off-canvas')
+                    }
+                }
+            });
+
+            //type switcher
+            $('.type-pairing-list > li').click(function () {
+                for (i = 0; i < 10; i++) {
+                    if ($('.editor').hasClass('type-' + i)) {
+                        $('.editor').removeClass('type-' + i);
+                    }
+                }
+                $(this).siblings().removeClass('selected');
+                $(this).removeClass('selected');
+                $(this).addClass('selected')
+                var type = $(this).attr('data-type');
+
+                $('.editor').addClass(type);
+
+
+            });
+            var userUploadedCover;
+            //cover switcher
+            $('.covers-list > li').click(function () {
+
+                for (i = 0; i < 10; i++) {
+                    if ($('.cover').hasClass('cover-' + i)) {
+                        $('.cover').removeClass('cover-' + i);
+                    }
+
+                }
+                $(this).siblings().removeClass('selected');
+                $(this).addClass('selected');
+                var cover = $(this).attr('data-cover');
+                $('.cover').addClass(cover);
+
+                if (cover == 'cover-4') {
+                    $('.cover').css('background-image', userUploadedCover);
+                } else {
+                    $('.cover').css('background-image', '');
+                }
+
+
+
+            });
+
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        //userUploadedCover = "url('" + e.target.result + "')";
+                        //<-- for background-image 
+                        userUploadedCover = e.target.result;
+                        $('.cover-image-src').attr('src', userUploadedCover);
+                        getImageBrightness()
+                        //hacky code to get shit done, should use uri in production
+
+                        //$('.test').attr('src',e.target.result); 
+                        //debug;
+                        $('.proposal').removeClass('cover-image-bright');
+                        $('.proposal').removeClass('cover-image-dark');
+                        getImageBrightness(userUploadedCover, function (brightness) {
+                            console.log(brightness);
+                            console.log((255 - brightness) / 100);
+                            if (brightness > 170) {
+                                $('.proposal').addClass('cover-image-bright');
+                            } else {
+                                $('.proposal').addClass('cover-image-dark');
+                            }
+                        });
+
+
+
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            $("#imgSrc").change(function () {
+                readURL(this);
+
+            });
+            //check image brightness to apply css accordingly
+            function getImageBrightness(imageSrc, callback) {
+                var img = document.createElement("img");
+                img.src = imageSrc;
+                img.style.display = "none";
+                document.body.appendChild(img);
+
+                var colorSum = 0;
+
+                img.onload = function () {
+                    // create canvas
+                    var canvas = document.createElement("canvas");
+                    canvas.width = this.width;
+                    canvas.height = this.height;
+
+                    var ctx = canvas.getContext("2d");
+                    ctx.drawImage(this, 0, 0);
+
+                    var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                    var data = imageData.data;
+                    var r, g, b, avg;
+
+                    for (var x = 0, len = data.length; x < len; x += 4) {
+                        r = data[x];
+                        g = data[x + 1];
+                        b = data[x + 2];
+
+                        avg = Math.floor((r + g + b) / 3);
+                        colorSum += avg;
+                    }
+
+                    var brightness = Math.floor(colorSum / (this.width * this.height));
+                    callback(brightness);
+                }
+            }
+
+
+
+
+        });
+    </script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

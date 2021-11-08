@@ -1,0 +1,42 @@
+$font-header: 'proxima-nova', sans-serf;
+$font-text: 'ff-tisa-web-pro', sans-serf;
+$font-ui: 'proxima-nova', sans-serf;
+
+
+$text:rgba(30,36,41,.85);
+$highlight:#59D9CE;
+$blue:darken($highlight,20%);
+$primary: #212e6f;
+$primary-light:#515fa7;
+$primary-extra-light:#c0cfee;
+$accent: rgb(226, 149, 98);
+$slate:#16294b;
+$opaque-white: rgba(254,254,254,.8);
+$light-grey: #848a95;
+$grey: rgba(mix(rgba(0,0,0,.7),$primary,50%),.7);
+$grey-blue:#ebf4f6;
+$yellow:rgba(255,204,34,.2);
+$salmon:#f3d0b1;
+$salmon-light:#FAE5D3;
+$light-orange:#FFAC76;
+$brown: darken(mix($primary,$accent,50%),20%);
+
+
+$border:1px solid rgba(214, 224, 226, 0.8);
+$border-gray:1px solid rgba($slate, .25);
+$border-light:1px solid rgba(0,0,0,.06);
+$warning:#FB4C5E;
+
+$content-wrapper-narrow:780px;
+$content-wrapper-medium:1050px;
+$proposal-padding:20px;
+$ui-padding:10px;
+$ui-padding-wide:20px;
+$format-bar-padding:15px;
+$radius:7px;
+$radius-small:3px;
+$narrow-ui-width:13px;
+$timeline-bar:50px;
+$coral: #e17307;
+$warning: #c22500;
+$toolbar-height:55px;

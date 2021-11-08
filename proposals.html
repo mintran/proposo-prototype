@@ -1,0 +1,1041 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Proposo Editor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://use.typekit.net/xut8apr.css">
+
+        <style>
+            :root {
+                --font-ui:'sofia-pro-soft';
+                --font-size: 18px;
+                --font-header: "grad", serif;
+                --font-header-weight: 400;
+                --font-body: "sofia-pro-soft", sans-serif;         
+            }
+        </style>
+    </head>
+    <body class="admin-page ui">
+        
+        <div class="admin-wrapper admin-ui ui">
+            <div class="faux-column-left"></div>
+            <nav class="admin-nav-wrapper">
+                
+                <ul class="admin-nav">
+                    <li class="new-proposal">
+                        <button class="btn btn-primary has-icon">
+                            <span class="mini-icon">
+                                <svg>
+                                    <use xlink:href="#icon-compose" />
+                                </svg>
+                            </span>
+                            <div class="label">Create</div>
+                        </button>
+                    </li> 
+                    <li class="admin-nav-link current">
+                        <a href="proposals.html">
+                            <span class="mini-icon">
+                                <svg>
+                                    <use xlink:href="#icon-proposals" />
+                                </svg>
+                            </span>Proposals
+                        </a>
+                    </li>
+                    <li class="admin-nav-link">
+                        <a href="payments.html">
+                            <span class="mini-icon">
+                                <svg>
+                                    <use xlink:href="#icon-payments" />
+                                </svg>
+                            </span>Invoices
+                        </a>
+                    </li>
+                    <li class="admin-nav-link"><a href="clients.html"><span class="mini-icon"><svg><use xlink:href="#icon-clients" /></svg></span>Clients</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="admin-page-content">
+                <div class="admin-page-top">
+                    <h2 class="admin-page-header">Proposals</h2>
+                    <div class="search-form">
+
+                        <form>
+                            <input type="search" placeholder="Enter keywords or client name" />
+                            <span class="search-icon">
+                                <svg><use xlink:href="#icon-search" /></svg>
+                                
+                            </span>
+                        </form>
+                    </div>
+                    <div class="user-link has-dropdown">
+                        <img class="user-link-pic" src="placeholders/user.jpg" />
+                        <div class="user-link-dropdown dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="settings.html">Settings</a></li>
+                                <li><a>Plan &amp; Billing</a></li>
+                                <li class="border-top"><a>Sign out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <div class="notification-link has-dropdown">
+                        <a class="icon-medium">
+                            <span class="notification-bubble">7</span>
+                            <svg>
+                                <use xlink:href="#icon-notification" />
+                            </svg>
+                        </a>
+                        <div class="notification-dropdown dropdown styled-scrollbar">
+                            <h2 class="dropdown-header">Notifications</h2>
+                            <ul class="notification-list">
+                                <li>John Snow from The wall has just signed your proposal</li>
+                                 <li>Someone from The wall has just read your proposal</li>
+                                <li>Michael Smith from ACME has made a payment of $2.400</li>
+                                 <li>John Snow from The wall has just signed your proposal</li>
+                                 <li>Someone from The wall has just read your proposal</li>
+                                <li>Michael Smith from ACME has made a payment of $2.400</li>
+                                <li>John Snow from The wall has just signed your proposal</li>
+                                 <li>Someone from The wall has just read your proposal</li>
+                                <li>Michael Smith from ACME has made a payment of $2.400</li>
+                                 <li>John Snow from The wall has just signed your proposal</li>
+                                 <li>Someone from The wall has just read your proposal</li>
+                                <li>Michael Smith from ACME has made a payment of $2.400</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav class="horizontal-nav">
+                    <ul class="horizontal-nav-left">
+                        <li class="selected"><button class="horizontal-nav-link">All</button></li>
+                        <li><button class="horizontal-nav-link">Draft</button></li>
+                        <li><button class="horizontal-nav-link">Sent</button></li>
+                        <li><button class="horizontal-nav-link">Accepted</button></li>
+                        <li><button class="horizontal-nav-link">Complete</button></li>
+                    </ul>
+                     <ul class="horizontal-nav-right">
+                        <li class="selected"><button class="horizontal-nav-link">Your Proposals</button></li>
+                        <li><button class="horizontal-nav-link">Templates</button></li>
+                    </ul>
+                   
+                </nav>
+                <div class="proposals-list">
+                    <div class="proposal-card">
+                          <div class="proposal-card-dropdown">
+                            <div class="proposal-card-dropdown-wrapper">
+                                <button class="proposal-card-icon">
+                                    <svg>
+                                  <use xlink:href="#icon-bolt" />
+                                </svg>
+                                   
+                                </button>
+                                <ul class="proposal-card-dropdown-menu">
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">               
+                                                <svg><use xlink:href="#icon-duplicate" /></svg>
+                                            </span>Duplicate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-archive" /></svg>
+                                            </span>Archive 
+                                        </a>
+                                    </li>
+                                      <li class="delete">
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-trashcan" /></svg>
+                                            </span>Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- proposal-card-dropdown-wrapper-->
+
+                        </div><!-- proposal-card-dropdown-->
+                        <div class="proposal-card-actions">
+                            <div class="proposal-card-actions-wrapper">
+                                <button class="btn has-icon proposal-card-actions-btn">
+                                    <span class="mini-icon">
+                                        <svg>
+                                          <use xlink:href="#icon-edit" />
+                                        </svg>
+                                    </span>
+                                    <div class="label">Edit</div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="proposal-card-info">
+                            <div class="proposal-card-header">
+                                <h2>Web design proposal</h2>
+                            
+                                
+                             </div>
+                            <div class="proposal-card-meta-wrapper">
+                                <dl class="proposal-card-meta">
+                                    <dt>Date</dt><dd class="proposal-card-date">Jan 12, 2019</dd>
+                                </dl>
+                                <dl class="proposal-card-client proposal-card-meta ">
+
+                                    <dt>For</dt> <dd class="proposal-card-for">ACME Inc</dd>
+                                </dl>
+                                <dl class="proposal-card-meta proposal-card-status">
+                                    <dt>Status</dt>
+                                    <dd class="proposal-card-status-complete">Complete</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!--proposal-card-info-->
+                        <div class="proposal-card-payment">
+
+                            <div class="proposal-card-amount">
+                                Received <strong>$30.000</strong> of <strong>$30.000</strong>
+                            </div>
+                            <div class="proposal-card-progress">
+
+                                <div class="proposal-card-received" style="width:100%">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- proposal-card 1 -->
+                    
+                    <div class="proposal-card">
+                          <div class="proposal-card-dropdown">
+                            <div class="proposal-card-dropdown-wrapper">
+                                <button class="proposal-card-icon">
+                                    <svg>
+                                  <use xlink:href="#icon-bolt" />
+                                </svg>
+                                   
+                                </button>
+                                <ul class="proposal-card-dropdown-menu">
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">               
+                                                <svg><use xlink:href="#icon-duplicate" /></svg>
+                                            </span>Duplicate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-archive" /></svg>
+                                            </span>Archive 
+                                        </a>
+                                    </li>
+                                      <li class="delete">
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-trashcan" /></svg>
+                                            </span>Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- proposal-card-dropdown-wrapper-->
+
+                        </div><!-- proposal-card-dropdown-->
+                        <div class="proposal-card-actions">
+                            <div class="proposal-card-actions-wrapper">
+                                <button class="btn has-icon proposal-card-actions-btn">
+                                    <span class="mini-icon">
+                                        <svg>
+                                          <use xlink:href="#icon-edit" />
+                                        </svg>
+                                    </span>
+                                    <div class="label">Edit</div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="proposal-card-info">
+                            <div class="proposal-card-header">
+                                <h2>Data Visualization Proposal</h2>
+                            
+                                
+                             </div>
+                            <div class="proposal-card-meta-wrapper">
+                                <dl class="proposal-card-meta">
+                                    <dt>Date</dt><dd class="proposal-card-date">Jan 12, 2019</dd>
+                                </dl>
+                                <dl class="proposal-card-client proposal-card-meta ">
+
+                                    <dt>For</dt> <dd class="proposal-card-for">ACME Inc</dd>
+                                </dl>
+                                <dl class="proposal-card-meta proposal-card-status">
+                                    <dt>Status</dt>
+                                    <dd class="proposal-card-status-draft">Draft</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!--proposal-card-info-->
+                        <div class="proposal-card-payment">
+
+                            <div class="proposal-card-amount">
+                                Received <strong>$0</strong> of <strong>$30.000</strong>
+                            </div>
+                            <div class="proposal-card-progress">
+
+                                <div class="proposal-card-received" style="width:0">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- proposal-card 2 -->
+                    <div class="proposal-card">
+                          <div class="proposal-card-dropdown">
+                            <div class="proposal-card-dropdown-wrapper">
+                                <button class="proposal-card-icon">
+                                    <svg>
+                                  <use xlink:href="#icon-bolt" />
+                                </svg>
+                                   
+                                </button>
+                                <ul class="proposal-card-dropdown-menu">
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">               
+                                                <svg><use xlink:href="#icon-duplicate" /></svg>
+                                            </span>Duplicate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-archive" /></svg>
+                                            </span>Archive 
+                                        </a>
+                                    </li>
+                                      <li class="delete">
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-trashcan" /></svg>
+                                            </span>Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- proposal-card-dropdown-wrapper-->
+
+                        </div><!-- proposal-card-dropdown-->
+                        <div class="proposal-card-actions">
+                            <div class="proposal-card-actions-wrapper">
+                                <button class="btn has-icon proposal-card-actions-btn">
+                                    <span class="mini-icon">
+                                        <svg>
+                                          <use xlink:href="#icon-edit" />
+                                        </svg>
+                                    </span>
+                                    <div class="label">Edit</div>
+                                </button>
+                                 <button class="btn has-icon proposal-card-actions-btn">
+                                    <span class="mini-icon">
+                                        <svg>
+                                          <use xlink:href="#icon-view" />
+                                        </svg>
+                                    </span>
+                                    <div class="label">View</div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="proposal-card-info">
+                            <div class="proposal-card-header">
+                                <h2>User Experience Audit and Research Proposal</h2>
+                            
+                                
+                             </div>
+                            <div class="proposal-card-meta-wrapper">
+                                <dl class="proposal-card-meta">
+                                    <dt>Date</dt><dd class="proposal-card-date">Jan 12, 2019</dd>
+                                </dl>
+                                <dl class="proposal-card-client proposal-card-meta ">
+
+                                    <dt>For</dt> <dd class="proposal-card-for">ACME Inc</dd>
+                                </dl>
+                                <dl class="proposal-card-meta proposal-card-sent">
+                                    <dt>Status</dt>
+                                    <dd class="proposal-card-status-sent">Sent</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!--proposal-card-info-->
+                        <div class="proposal-card-payment">
+
+                            <div class="proposal-card-amount">
+                                Received <strong>$15.000</strong> of <strong>$30.000</strong>
+                            </div>
+                            <div class="proposal-card-progress">
+
+                                <div class="proposal-card-received" style="width:50%">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- proposal-card 3 -->
+                    <div class="proposal-card">
+                          <div class="proposal-card-dropdown">
+                            <div class="proposal-card-dropdown-wrapper">
+                                <button class="proposal-card-icon">
+                                    <svg>
+                                  <use xlink:href="#icon-bolt" />
+                                </svg>
+                                   
+                                </button>
+                                <ul class="proposal-card-dropdown-menu">
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">               
+                                                <svg><use xlink:href="#icon-duplicate" /></svg>
+                                            </span>Duplicate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-archive" /></svg>
+                                            </span>Archive 
+                                        </a>
+                                    </li>
+                                      <li class="delete">
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-trashcan" /></svg>
+                                            </span>Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- proposal-card-dropdown-wrapper-->
+
+                        </div><!-- proposal-card-dropdown-->
+                        <div class="proposal-card-actions">
+                            <div class="proposal-card-actions-wrapper">
+                                <button class="btn has-icon proposal-card-actions-btn">
+                                    <span class="mini-icon">
+                                        <svg>
+                                          <use xlink:href="#icon-view" />
+                                        </svg>
+                                    </span>
+                                    <div class="label">View</div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="proposal-card-info">
+                            <div class="proposal-card-header">
+                                <h2>Web design proposal</h2>
+                            
+                                
+                             </div>
+                            <div class="proposal-card-meta-wrapper">
+                                <dl class="proposal-card-meta">
+                                    <dt>Date</dt><dd class="proposal-card-date">Jan 12, 2019</dd>
+                                </dl>
+                                <dl class="proposal-card-client proposal-card-meta ">
+
+                                    <dt>For</dt> <dd class="proposal-card-for">ACME Inc</dd>
+                                </dl>
+                                <dl class="proposal-card-meta proposal-card-status">
+                                    <dt>Status</dt>
+                                    <dd class="proposal-card-status-sent">Sent</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!--proposal-card-info-->
+                        <div class="proposal-card-payment">
+
+                            <div class="proposal-card-amount">
+                                Received <strong>$20.000</strong> of <strong>$30.000</strong>
+                            </div>
+                            <div class="proposal-card-progress">
+
+                                <div class="proposal-card-received" style="width:66.666%">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- proposal-card 4 -->
+                    <div class="proposal-card">
+                          <div class="proposal-card-dropdown">
+                            <div class="proposal-card-dropdown-wrapper">
+                                <button class="proposal-card-icon">
+                                    <svg>
+                                  <use xlink:href="#icon-bolt" />
+                                </svg>
+                                   
+                                </button>
+                                <ul class="proposal-card-dropdown-menu">
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">               
+                                                <svg><use xlink:href="#icon-duplicate" /></svg>
+                                            </span>Duplicate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-archive" /></svg>
+                                            </span>Archive 
+                                        </a>
+                                    </li>
+                                      <li class="delete">
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-trashcan" /></svg>
+                                            </span>Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- proposal-card-dropdown-wrapper-->
+
+                        </div><!-- proposal-card-dropdown-->
+                        <div class="proposal-card-actions">
+                            <div class="proposal-card-actions-wrapper">
+                                <button class="btn has-icon proposal-card-actions-btn">
+                                    <span class="mini-icon">
+                                        <svg>
+                                          <use xlink:href="#icon-edit" />
+                                        </svg>
+                                    </span>
+                                    <div class="label">Edit</div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="proposal-card-info">
+                            <div class="proposal-card-header">
+                                <h2>Landing Page Design Proposal</h2>
+                            
+                                
+                             </div>
+                            <div class="proposal-card-meta-wrapper">
+                                <dl class="proposal-card-meta">
+                                    <dt>Date</dt><dd class="proposal-card-date">Jan 12, 2019</dd>
+                                </dl>
+                                <dl class="proposal-card-client proposal-card-meta ">
+
+                                    <dt>For</dt> <dd class="proposal-card-for">ACME Inc</dd>
+                                </dl>
+                                <dl class="proposal-card-meta proposal-card-status">
+                                    <dt>Status</dt>
+                                    <dd class="proposal-card-status-draft">Draft</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!--proposal-card-info-->
+                        <div class="proposal-card-payment">
+
+                            <div class="proposal-card-amount">
+                                Received <strong>$0</strong> of <strong>$30.000</strong>
+                            </div>
+                            <div class="proposal-card-progress">
+
+                                <div class="proposal-card-received" style="width:0">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- proposal-card 5 -->
+                    <div class="proposal-card">
+                          <div class="proposal-card-dropdown">
+                            <div class="proposal-card-dropdown-wrapper">
+                                <button class="proposal-card-icon">
+                                    <svg>
+                                  <use xlink:href="#icon-bolt" />
+                                </svg>
+                                   
+                                </button>
+                                <ul class="proposal-card-dropdown-menu">
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">               
+                                                <svg><use xlink:href="#icon-duplicate" /></svg>
+                                            </span>Duplicate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-archive" /></svg>
+                                            </span>Archive 
+                                        </a>
+                                    </li>
+                                      <li class="delete">
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-trashcan" /></svg>
+                                            </span>Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- proposal-card-dropdown-wrapper-->
+
+                        </div><!-- proposal-card-dropdown-->
+                        <div class="proposal-card-actions">
+                            <div class="proposal-card-actions-wrapper">
+                                <button class="btn has-icon proposal-card-actions-btn">
+                                    <span class="mini-icon">
+                                        <svg>
+                                          <use xlink:href="#icon-edit" />
+                                        </svg>
+                                    </span>
+                                    <div class="label">Edit</div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="proposal-card-info">
+                            <div class="proposal-card-header">
+                                <h2>Web design proposal</h2>
+                            
+                                
+                             </div>
+                            <div class="proposal-card-meta-wrapper">
+                                <dl class="proposal-card-meta">
+                                    <dt>Date</dt><dd class="proposal-card-date">Jan 12, 2019</dd>
+                                </dl>
+                                <dl class="proposal-card-client proposal-card-meta ">
+
+                                    <dt>For</dt> <dd class="proposal-card-for">ACME Inc</dd>
+                                </dl>
+                                <dl class="proposal-card-meta proposal-card-status">
+                                    <dt>Status</dt>
+                                    <dd class="proposal-card-status-sent">Sent</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!--proposal-card-info-->
+                        <div class="proposal-card-payment">
+
+                            <div class="proposal-card-amount">
+                                Received <strong>$30.000</strong> of <strong>$45.000</strong>
+                            </div>
+                            <div class="proposal-card-progress">
+
+                                <div class="proposal-card-received" style="width:66.666%">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- proposal-card 6 -->
+                    <div class="proposal-card">
+                          <div class="proposal-card-dropdown">
+                            <div class="proposal-card-dropdown-wrapper">
+                                <button class="proposal-card-icon">
+                                    <svg>
+                                  <use xlink:href="#icon-bolt" />
+                                </svg>
+                                   
+                                </button>
+                                <ul class="proposal-card-dropdown-menu">
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">               
+                                                <svg><use xlink:href="#icon-duplicate" /></svg>
+                                            </span>Duplicate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-archive" /></svg>
+                                            </span>Archive 
+                                        </a>
+                                    </li>
+                                      <li class="delete">
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-trashcan" /></svg>
+                                            </span>Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- proposal-card-dropdown-wrapper-->
+
+                        </div><!-- proposal-card-dropdown-->
+                        <div class="proposal-card-actions">
+                            <div class="proposal-card-actions-wrapper">
+                                <button class="btn has-icon proposal-card-actions-btn">
+                                    <span class="mini-icon">
+                                        <svg>
+                                          <use xlink:href="#icon-edit" />
+                                        </svg>
+                                    </span>
+                                    <div class="label">Edit</div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="proposal-card-info">
+                            <div class="proposal-card-header">
+                                <h2>Search Engine Optimization Proposal</h2>
+                            
+                                
+                             </div>
+                            <div class="proposal-card-meta-wrapper">
+                                <dl class="proposal-card-meta">
+                                    <dt>Date</dt><dd class="proposal-card-date">Jan 12, 2019</dd>
+                                </dl>
+                                <dl class="proposal-card-client proposal-card-meta ">
+
+                                    <dt>For</dt> <dd class="proposal-card-for">ACME Inc</dd>
+                                </dl>
+                                <dl class="proposal-card-meta proposal-card-status">
+                                    <dt>Status</dt>
+                                    <dd class="proposal-card-status-complete">Complete</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!--proposal-card-info-->
+                        <div class="proposal-card-payment">
+
+                            <div class="proposal-card-amount">
+                                Received <strong>$30.0000</strong> of <strong>$30.000</strong>
+                            </div>
+                            <div class="proposal-card-progress">
+
+                                <div class="proposal-card-received" style="width:100%">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- proposal-card 7 -->
+                    <div class="proposal-card">
+                          <div class="proposal-card-dropdown">
+                            <div class="proposal-card-dropdown-wrapper">
+                                <button class="proposal-card-icon">
+                                    <svg>
+                                  <use xlink:href="#icon-bolt" />
+                                </svg>
+                                   
+                                </button>
+                                <ul class="proposal-card-dropdown-menu">
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">               
+                                                <svg><use xlink:href="#icon-duplicate" /></svg>
+                                            </span>Duplicate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-archive" /></svg>
+                                            </span>Archive 
+                                        </a>
+                                    </li>
+                                      <li class="delete">
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-trashcan" /></svg>
+                                            </span>Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- proposal-card-dropdown-wrapper-->
+
+                        </div><!-- proposal-card-dropdown-->
+                        <div class="proposal-card-actions">
+                            <div class="proposal-card-actions-wrapper">
+                                <button class="btn has-icon proposal-card-actions-btn">
+                                    <span class="mini-icon">
+                                        <svg>
+                                          <use xlink:href="#icon-edit" />
+                                        </svg>
+                                    </span>
+                                    <div class="label">Edit</div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="proposal-card-info">
+                            <div class="proposal-card-header">
+                                <h2>Mobile User Interface Design Proposal</h2>
+                            
+                                
+                             </div>
+                            <div class="proposal-card-meta-wrapper">
+                                <dl class="proposal-card-meta">
+                                    <dt>Date</dt><dd class="proposal-card-date">Jan 12, 2019</dd>
+                                </dl>
+                                <dl class="proposal-card-client proposal-card-meta ">
+
+                                    <dt>For</dt> <dd class="proposal-card-for">ACME Inc</dd>
+                                </dl>
+                                <dl class="proposal-card-meta proposal-card-status">
+                                    <dt>Status</dt>
+                                    <dd class="proposal-card-status-draft">Draft</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!--proposal-card-info-->
+                        <div class="proposal-card-payment">
+
+                            <div class="proposal-card-amount">
+                                Received <strong>$0</strong> of <strong>$30.000</strong>
+                            </div>
+                            <div class="proposal-card-progress">
+
+                                <div class="proposal-card-received" style="width:0">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- proposal-card 1 -->
+                    <div class="proposal-card">
+                          <div class="proposal-card-dropdown">
+                            <div class="proposal-card-dropdown-wrapper">
+                                <button class="proposal-card-icon">
+                                    <svg>
+                                  <use xlink:href="#icon-bolt" />
+                                </svg>
+                                   
+                                </button>
+                                <ul class="proposal-card-dropdown-menu">
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">               
+                                                <svg><use xlink:href="#icon-duplicate" /></svg>
+                                            </span>Duplicate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-archive" /></svg>
+                                            </span>Archive 
+                                        </a>
+                                    </li>
+                                      <li class="delete">
+                                        <a>
+                                            <span class="mini-icon">
+                                                <svg><use xlink:href="#icon-trashcan" /></svg>
+                                            </span>Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- proposal-card-dropdown-wrapper-->
+
+                        </div><!-- proposal-card-dropdown-->
+                        <div class="proposal-card-actions">
+                            <div class="proposal-card-actions-wrapper">
+                                <button class="btn has-icon proposal-card-actions-btn">
+                                    <span class="mini-icon">
+                                        <svg>
+                                          <use xlink:href="#icon-edit" />
+                                        </svg>
+                                    </span>
+                                    <div class="label">Edit</div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="proposal-card-info">
+                            <div class="proposal-card-header">
+                                <h2>Identity design proposal</h2>
+                            
+                                
+                             </div>
+                            <div class="proposal-card-meta-wrapper">
+                                <dl class="proposal-card-meta">
+                                    <dt>Date</dt><dd class="proposal-card-date">Jan 12, 2019</dd>
+                                </dl>
+                                <dl class="proposal-card-client proposal-card-meta ">
+
+                                    <dt>For</dt> <dd class="proposal-card-for">ACME Inc</dd>
+                                </dl>
+                                <dl class="proposal-card-meta proposal-card-status">
+                                    <dt>Status</dt>
+                                    <dd class="proposal-card-status-overdue">Overdue</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!--proposal-card-info-->
+                        <div class="proposal-card-payment">
+
+                            <div class="proposal-card-amount">
+                                Received <strong>$7.500</strong> of <strong>$15.000</strong>
+                            </div>
+                            <div class="proposal-card-progress">
+
+                                <div class="proposal-card-received" style="width:50%">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- proposal-card 6 -->
+                    
+
+
+                </div>
+
+                <!-- proposal-list -->
+            </div>
+            <!-- admin-page-content-->
+            <div class="faux-column-right"></div>
+        </div>
+        <!-- admin-wrapper-->
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg version="1.1" id="sprite" xmlns="http://www.w3.org/2000/svg" style="display:none">
+            <symbol id="icon-view"  viewBox="0 0 16 16">
+
+                <path class="st0" d="M8,3C3.6,3,0,8.3,0,8.3s3.6,5.3,8,5.3s8-5.3,8-5.3S12.4,3,8,3z M8,11c-1.5,0-2.7-1.2-2.7-2.7S6.5,5.7,8,5.7
+                s2.7,1.2,2.7,2.7S9.5,11,8,11z" fill="currentColor"/>
+            </symbol>
+            <symbol id="icon-search"  viewBox="0 0 16 16">
+                <path d="M15.56,13.44l-2.67-2.67a7,7,0,1,0-2.12,2.12l2.67,2.67a1.5,1.5,0,0,0,2.12-2.12ZM2,7A5,5,0,0,1,12,7a5,5,0,0,1-1.15,3.15l-.71.71A5,5,0,0,1,7,12,5,5,0,0,1,2,7Z" fill="currentColor"/>
+            </symbol>
+            <symbol id="icon-bolt"  viewBox="0 0 10 19"  >
+                <g 
+                stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g 
+                    fill="currentColor" fill-rule="nonzero">
+                        <path d="M5.7761099,7.14012982 L10,7.14012982 L4.7929581,18.8888889 L4.7929581,11.3703755 L0,11.3703755 L5.97074138,0 L5.7761099,7.14012982 Z" ></path>
+                    </g>
+                </g>
+            </symbol>
+            <symbol id="icon-edit"  viewBox="0 0 15.58 15.51">
+ 
+                <g>
+                    <polygon points="7.29 4.29 0 11.58 0 15.51 4 15.51 11.29 8.26 12.29 7.28 8.29 3.28 7.29 4.29" fill="currentColor"/>
+                    <path d="M15.29,2.87,12.71.29a1,1,0,0,0-1.42,0L9.36,2.23l.35-.35,1.42,1.42L12.3,4.46l1.41,1.41,1.58-1.58A1,1,0,0,0,15.29,2.87Z" fill="currentColor"/>
+              </g>
+            </symbol>
+             <symbol id="icon-duplicate"  viewBox="0 0 14 16">
+                <path d="M0,0V16H14V6.07L8,0ZM12,14H2V2H8V6h4Z" fill="currentColor"/>
+             </symbol>
+             <symbol id="icon-archive"  viewBox="0 0 16 16">
+              <g>
+                <path d="M0,7.07V16H16V0H0ZM2,2H14V7H2ZM2,9H14v5H2Z" fill="currentColor"/>
+                <rect x="6" y="3" width="4" height="2" fill="currentColor"/>
+                <rect x="6" y="10" width="4" height="2" fill="currentColor"/>
+              </g>
+            </symbol>
+
+            <symbol id="icon-proposals" viewBox="0 0 16 16">
+                <g>
+                    <path d="M10,10a2.07,2.07,0,0,1-2,2,2.07,2.07,0,0,1-2-2H0v6H16V10Z" fill="currentColor"/>
+                    <polygon points="15 8 13 8 13 2 3 2 3 8 1 8 1 0 15 0 15 8" fill="currentColor"/>
+                    <rect x="5" y="3" width="6" height="2" fill="currentColor"/>
+                    <rect x="5" y="6" width="6" height="2" fill="currentColor"/>
+                </g>
+            </symbol>
+
+            <symbol id="icon-payments" viewBox="0 0 16 16">
+              <g>
+                
+                
+                <g>
+                  <circle cx="8" cy="10" r="2" fill="currentColor"/>
+                  <path d="M0,4V16H16V4ZM4,14a2,2,0,0,0-2-2V8A2,2,0,0,0,4,6h8a2,2,0,0,0,2,2v4a2,2,0,0,0-2,2Z" fill="currentColor"/>
+                </g>
+                <rect width="16" height="2" fill="currentColor"/>
+              </g>
+            </symbol>
+            <symbol id="icon-clients" viewBox="0 0 16 15.93">
+                <g>
+                    <path d="M11.54,8.8a5.87,5.87,0,0,1-7.07,0A8.12,8.12,0,0,0,0,15.93H16A8.11,8.11,0,0,0,11.54,8.8Z" fill="currentColor"/>
+                    <circle cx="8" cy="4" r="4" fill="currentColor"/>
+                </g>
+            </symbol>
+           <symbol id="icon-compose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.96 19.92">
+ 
+                <g>
+                    <path d="M14,20H2a2,2,0,0,1-2-2V4A2,2,0,0,1,2,2L7.92,2V3.94l-6,0L1.84,18,14,18V8h2V18A2,2,0,0,1,14,20Z" fill="currentColor"/>
+                    <polygon points="5.11 9.96 5.09 8.04 10.88 8.02 10.86 9.94 5.11 9.96" fill="currentColor"/>
+                    <polygon points="13.89 5.73 11.94 5.81 11.94 0 13.89 0.06 13.89 5.73" fill="currentColor"/>
+                    <polygon points="15.86 3.94 10.04 3.94 10.03 2.04 15.86 2 15.86 3.94" fill="currentColor"/>
+                    <polygon points="5.07 13.94 5.03 12.05 10.87 12.04 10.84 13.91 5.07 13.94" fill="currentColor"/>
+                </g>
+            </symbol>
+            <symbol id="icon-notification" viewBox="0 0 19.18 24">
+  
+                <g>
+                    <path d="M15.59,12.76V8.25A6.17,6.17,0,0,0,9.77,2,6,6,0,0,0,3.59,8v4.76a7.83,7.83,0,0,1-2.29,5.54h0A1,1,0,0,0,2,20H17.17a1,1,0,0,0,.71-1.71h0A7.83,7.83,0,0,1,15.59,12.76Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+                    <path d="M12.59,20a3,3,0,1,1-6,0" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+                   
+                </g>
+            </symbol>
+            <symbol id="icon-trashcan" viewBox="0 0 16 16">
+
+                    <g>
+                        <path d="M16,3H12V0H4V3H0V5H1V16H15V5h1ZM6,2h4V3H6Zm7,12H3V5H13Z" fill="currentColor"/>
+                        <rect x="5" y="7" width="2" height="5" fill="currentColor"/>
+                        <rect x="9" y="7" width="2" height="5" fill="currentColor"/>
+                    </g>
+                </symbol>   
+
+
+
+
+
+
+
+        </svg>
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                
+                $('.proposal-card-icon').click(function (e) {  
+                    $(this).closest('.proposal-card-dropdown').toggleClass('is-active');  
+                    e.stopPropagation();
+                });
+                $('.has-dropdown').click(function (e) {  
+                    $(this).toggleClass('is-active');  
+                    e.stopPropagation();
+                });
+                $(document).on("click", function(e) {
+                if ($(e.target).is(".proposal-card-dropdown") === false) {
+                  $(".proposal-card-dropdown").removeClass("is-active");
+                }
+                $(document).on("click", function(e) {
+                    if ($(e.target).is('.has-dropdown') === false) {
+                      $('.has-dropdown').removeClass("is-active");
+                    }
+                  });
+              });
+            });
+        </script>
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
